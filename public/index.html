@@ -14,12 +14,23 @@
             Lambda URL Proof-of-Concept
         </h1>
         <p></p>
-        <form method="post" action="https://nxoyj2e2szlkxemj5ar3wdgciq0wtsuf.lambda-url.us-east-2.on.aws/">
+        <form method="post" action="REPLACE-THIS-VALUE">
             <div><label>Email Address: <br /><input type="text" name="email" /></label></div>
             <div><label>Message:<br /> <textarea name="message"></textarea></label></div>
             <div><input class="btn btn-primary" type="submit" value="Submit" /></div>
         </form>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (e) => {
+            if (document.querySelector('form[action=REPLACE-THIS-VALUE]')) {
+                console.log('asdfasdfasdfasdf')
+                const el = document.createElement('h1');
+                el.classList.add('text-danger')
+                el.innerText = 'You need to update the form action attribute before using this demo';
+                document.body.firstElementChild.appendChild(el)
+            }
+        })
+    </script>
 </body>
 
 </html>
