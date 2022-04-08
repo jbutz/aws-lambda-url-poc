@@ -1,0 +1,44 @@
+{
+  "name": "@jbutz/aws-lambda-url-poc",
+  "version": "1.0.0",
+  "description": "Proof of Concept showing how you can use AWS Lambda URLs to accept form input from a website",
+  "private": true,
+  "bin": {
+    "poc": "bin/poc.js"
+  },
+  "scripts": {
+    "deploy": "cdk deploy",
+    "test": "jest",
+    "serve": "http-server -p 8080 public/"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "aws-cdk": "2.20.0",
+    "esbuild": "^0.14.34",
+    "http-server": "^14.1.0",
+    "jest": "^26.4.2",
+    "prettier": "^2.6.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.20.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbutz/aws-lambda-url-poc.git"
+  },
+  "author": {
+    "name": "Jason Butz",
+    "url": "https://jasonbutz.info"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbutz/aws-lambda-url-poc/issues"
+  },
+  "homepage": "https://github.com/jbutz/aws-lambda-url-poc#readme"
+}
