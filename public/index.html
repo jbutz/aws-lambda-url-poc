@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AWS Lambda URL Proof-of-Concept</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mx-auto" style="max-width: 48rem">
+        <h1 class="text-3xl">
+            Lambda URL Proof-of-Concept
+        </h1>
+        <p></p>
+        <form method="post" action="https://nxoyj2e2szlkxemj5ar3wdgciq0wtsuf.lambda-url.us-east-2.on.aws/">
+            <div><label>Email Address: <br /><input type="text" name="email" /></label></div>
+            <div><label>Message:<br /> <textarea name="message"></textarea></label></div>
+            <div><input class="btn btn-primary" type="submit" value="Submit" /></div>
+        </form>
+    </div>
+</body>
+
+</html>
